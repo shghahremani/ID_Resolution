@@ -92,7 +92,7 @@ def job_titile_quiry_generator(categories,sig,job_title):
   return sig
 
 def query_generator(full_name, location_country, job_title):
-    df = pd.read_csv('job_title\synonym_job_titles_for_search.csv')
+    df = pd.read_csv('job_title/synonym_job_titles_for_search.csv')
     str_d = ""
     if len(job_title)==0 and len(location_country)==0:
         # Create an SQL query
